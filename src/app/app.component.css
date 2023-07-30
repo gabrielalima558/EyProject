@@ -1,5 +1,8 @@
 main {
   background-color: #1E1E1E;
   background-size: cover;
-  min-height: 80vh;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center; /* alinha horizontalmente no centro */
+  align-items: center;
 }
