@@ -42,3 +42,22 @@
   margin-top: 24px;
   border: 1px solid transparent;
 }
+
+@media screen and (max-width: 768px) {
+  .main-form {
+    width: 355px;
+    max-width: 502px;
+    margin: 0 auto;
+  }
+
+  .label,
+  .input,
+  .next-button {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .label {
+    margin-bottom: 10px;
+  }
+}
