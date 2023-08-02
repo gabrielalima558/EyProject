@@ -11,7 +11,6 @@
 
 .label {
   color: #000;
-  font-family: Inter;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -35,6 +34,7 @@
 .next-button {
   width: 200px;
   height: 50px;
+  font-size: 16px;
   flex-shrink: 0;
   border-radius: 80px;
   background: #FFEA29;
