@@ -25,6 +25,7 @@
   width: 324px;
   height: 40px;
   flex-shrink: 0;
+  border: 1px solid transparent;
   border-radius: 20px;
   background: #D9D9D9;
   margin-bottom: 10px;
@@ -39,4 +40,5 @@
   background: #FFEA29;
   margin-left: 32%;
   margin-top: 24px;
+  border: 1px solid transparent;
 }
