@@ -1,3 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
 .ff-inter { font-family: 'Inter', sans-serif; }
 .ff-roboto-mono { font-family: 'Roboto Mono', monospace; }
+.main-form {
+  width: 70vh;
+  max-width: 502px;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 80px;
+  background: #FFF;
+  margin-top: 108px;
+  margin-bottom: 197px;
+  padding: 15%;
+}

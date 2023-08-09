@@ -1,3 +1,14 @@
+.main-form {
+  padding-bottom: 15%;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 5%;
+}
+
+.title {
+  margin-bottom: 112px;
+}
+
 .input-custom {
   border: 1px solid transparent;
   border-radius: 20px;

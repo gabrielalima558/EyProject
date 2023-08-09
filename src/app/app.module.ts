@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EyHeaderComponent } from './components/ey-header/ey-header.component';
 import { PersonalInformationComponent } from './components/registration/personal-information/personal-information.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EyHeaderComponent,
-    PersonalInformationComponent
+    PersonalInformationComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
