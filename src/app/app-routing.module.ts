@@ -2,6 +2,8 @@ import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PersonalInformationComponent } from './components/registration/personal-information/personal-information.component';
 import { LoginComponent } from './components/login/login.component';
+import { JobBoardComponent } from './components/job-board/job-board.component';
+import { SocialVulnerabilityInformationComponent } from './components/registration/social-vulnerability-information/social-vulnerability-information.component';
 
 const routes: Routes = [
   {
@@ -14,8 +16,16 @@ const routes: Routes = [
     component: LoginComponent
   },
   {
-    path: 'personalInformation',
+    path: 'register/1',
     component: PersonalInformationComponent
+  },
+  {
+    path: 'job-board',
+    component: JobBoardComponent
+  },
+  {
+    path: 'register/2',
+    component: SocialVulnerabilityInformationComponent
   }
 ];
 

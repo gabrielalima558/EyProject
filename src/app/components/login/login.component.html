@@ -1,14 +1,18 @@
-<form class="main-form ff-inter">
-  <p class="text-center title">Login</p>
-  <div class="mb-3">
-    <label for="emailCadidate" class="form-label">E-mail</label>
-    <input type="email" class="form-control input-custom" id="emailCadidate" aria-describedby="emailCadidate">
-  </div>
-  <div class="mb-3">
-    <label for="passwordCadidate" class="form-label">Senha</label>
-    <input type="text" class="form-control input-custom" id="passwordCadidate">
-  </div>
-  <div class="text-center">
-    <button (click)="startLogin()" type="submit" class="btn next-button">Entrar</button>
-  </div>
-</form>
+<div class="d-flex p-2 flex-column justify-content-center align-items-center">
+  <form class="main-form ff-inter d-flex p-2 flex-column justify-content-center align-items-center">
+    <div class="main-content">
+      <p class="text-center title">Login</p>
+      <div class="mb-3">
+        <label for="emailCadidate" class="form-label">E-mail</label>
+        <input type="email" class="form-control input-custom" id="emailCadidate" aria-describedby="emailCadidate">
+      </div>
+      <div class="mb-3 input-style">
+        <label for="passwordCadidate" class="form-label">Senha</label>
+        <input type="text" class="form-control input-custom" id="passwordCadidate">
+      </div>
+      <div class="text-center">
+        <button (click)="startLogin()" type="submit" class="btn next-button">Entrar</button>
+      </div>
+    </div>
+  </form>
+</div>

@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { EyHeaderComponent } from './components/ey-header/ey-header.component';
 import { PersonalInformationComponent } from './components/registration/personal-information/personal-information.component';
 import { LoginComponent } from './components/login/login.component';
+import { JobBoardComponent } from './components/job-board/job-board.component';
+import { SocialVulnerabilityInformationComponent } from './components/registration/social-vulnerability-information/social-vulnerability-information.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EyHeaderComponent,
     PersonalInformationComponent,
-    LoginComponent
+    LoginComponent,
+    JobBoardComponent,
+    SocialVulnerabilityInformationComponent,
   ],
   imports: [
     BrowserModule,
