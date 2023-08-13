@@ -8,6 +8,7 @@ import { PersonalInformationComponent } from './components/registration/personal
 import { LoginComponent } from './components/login/login.component';
 import { JobBoardComponent } from './components/job-board/job-board.component';
 import { SocialVulnerabilityInformationComponent } from './components/registration/social-vulnerability-information/social-vulnerability-information.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SocialVulnerabilityInformationComponent } from './components/registrati
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
