@@ -1,3 +1,4 @@
+import { SubmitJobPositionSuccessComponent } from './components/registration/submit-job-position-success/submit-job-position-success.component';
 import { SubmitJobPositionChallengeComponent } from './components/registration/submit-job-position-challenge/submit-job-position-challenge.component';
 import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -37,6 +38,10 @@ const routes: Routes = [
     path: 'submit/2',
     component: SubmitJobPositionChallengeComponent
   },
+  {
+    path: 'submit/3',
+    component: SubmitJobPositionSuccessComponent
+  }
 ];
 
 @NgModule({
