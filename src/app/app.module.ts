@@ -9,6 +9,7 @@ import { LoginComponent } from './components/login/login.component';
 import { JobBoardComponent } from './components/job-board/job-board.component';
 import { SocialVulnerabilityInformationComponent } from './components/registration/social-vulnerability-information/social-vulnerability-information.component';
 import { SubmitJobPositionComponent } from './components/registration/submit-job-position/submit-job-position.component';
+import { SubmitJobPositionChallengeComponent } from './components/registration/submit-job-position-challenge/submit-job-position-challenge.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { SubmitJobPositionComponent } from './components/registration/submit-job
     JobBoardComponent,
     SocialVulnerabilityInformationComponent,
     SubmitJobPositionComponent,
+    SubmitJobPositionChallengeComponent,
   ],
   imports: [
     BrowserModule,
