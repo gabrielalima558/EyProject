@@ -11,6 +11,7 @@ import { SocialVulnerabilityInformationComponent } from './components/registrati
 import { SubmitJobPositionComponent } from './components/registration/submit-job-position/submit-job-position.component';
 import { SubmitJobPositionChallengeComponent } from './components/registration/submit-job-position-challenge/submit-job-position-challenge.component';
 import { SubmitJobPositionSuccessComponent } from './components/registration/submit-job-position-success/submit-job-position-success.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { SubmitJobPositionSuccessComponent } from './components/registration/sub
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
