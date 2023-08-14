@@ -7,6 +7,7 @@ import { LoginComponent } from './components/login/login.component';
 import { JobBoardComponent } from './components/job-board/job-board.component';
 import { SocialVulnerabilityInformationComponent } from './components/registration/social-vulnerability-information/social-vulnerability-information.component';
 import { SubmitJobPositionComponent } from './components/registration/submit-job-position/submit-job-position.component';
+import { JobCardComponent } from './components/job-card/job-card.component';
 
 const routes: Routes = [
   {
@@ -23,12 +24,16 @@ const routes: Routes = [
     component: PersonalInformationComponent
   },
   {
+    path: 'register/2',
+    component: SocialVulnerabilityInformationComponent
+  },
+  {
     path: 'job-board',
     component: JobBoardComponent
   },
   {
-    path: 'register/2',
-    component: SocialVulnerabilityInformationComponent
+    path: 'job-card',
+    component: JobCardComponent
   },
   {
     path: 'submit/1',

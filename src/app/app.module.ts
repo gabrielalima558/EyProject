@@ -12,6 +12,7 @@ import { SubmitJobPositionComponent } from './components/registration/submit-job
 import { SubmitJobPositionChallengeComponent } from './components/registration/submit-job-position-challenge/submit-job-position-challenge.component';
 import { SubmitJobPositionSuccessComponent } from './components/registration/submit-job-position-success/submit-job-position-success.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { JobCardComponent } from './components/job-card/job-card.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     SubmitJobPositionComponent,
     SubmitJobPositionChallengeComponent,
     SubmitJobPositionSuccessComponent,
+    JobCardComponent,
   ],
   imports: [
     BrowserModule,
