@@ -2,7 +2,7 @@
   "user": [
     {
       "id": 1,
-      "name":"João",
+      "name": "João",
       "lastName": "Batista",
       "cpf": "474035339852",
       "email": "email@gmail.com",
@@ -14,6 +14,34 @@
       "lgbtqia": "Não",
       "pcd": "Sim",
       "familyIncome": "2000"
+    },
+    {
+      "name": "Gabriela",
+      "cpf": "47403533852",
+      "email": "gabrielalima558@gmail.com",
+      "phone": "11958270826",
+      "password": "fvdvdfv",
+      "birth": "",
+      "ethnicity": "",
+      "nativePeople": "",
+      "lgbtqia": "",
+      "pcd": "",
+      "familyIncome": "",
+      "id": 2
+    },
+    {
+      "name": "Gabriela",
+      "cpf": "474.035.338-52",
+      "email": "gabrielalima558@gmail.com",
+      "phone": "11958270826",
+      "password": "sfsgfgdfgdf",
+      "birth": "",
+      "ethnicity": "branca",
+      "nativePeople": "true",
+      "lgbtqia": "false",
+      "pcd": "false",
+      "familyIncome": 17525356356,
+      "id": 3
     }
   ]
 }
