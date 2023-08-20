@@ -9,19 +9,13 @@ import { Router } from '@angular/router';
 })
 export class PersonalInformationComponent implements OnInit {
 
-  user: User = {
-    name: "",
-    lastName: "",
-    cpf: "",
-    email: "",
-    phone: "",
-    password: "",
-    ethnicity: "",
-    nativePeople: "",
-    lgbtqia: "",
-    pcd: "",
-    familyIncome: ""
-  }
+
+    name: string = ""
+    lastName: string = ""
+    cpf: string = ""
+    email: string = ""
+    phone: string = ""
+    password: string = ""
 
   constructor(
     private router: Router
@@ -32,7 +26,7 @@ export class PersonalInformationComponent implements OnInit {
 
   goToPerson() {
 
-    this.router.navigate(['register/2', this.user.name, this.user.lastName, this.user.cpf, this.user.email, this.user.phone, this.user.password]);
+    this.router.navigate(['register/2', this.name, this.lastName, this.cpf, this.email, this.phone, this.password]);
   }
 
 }
