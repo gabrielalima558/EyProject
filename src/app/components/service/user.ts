@@ -6,6 +6,7 @@ export interface User {
   email: string,
   phone: string,
   password: string,
+  birth: string,
   ethnicity: string,
   nativePeople: string,
   lgbtqia: string,

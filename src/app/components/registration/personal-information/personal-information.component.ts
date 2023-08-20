@@ -9,7 +9,6 @@ import { Router } from '@angular/router';
 })
 export class PersonalInformationComponent implements OnInit {
 
-
     name: string = ""
     lastName: string = ""
     cpf: string = ""
@@ -25,7 +24,6 @@ export class PersonalInformationComponent implements OnInit {
   }
 
   goToPerson() {
-
     this.router.navigate(['register/2', this.name, this.lastName, this.cpf, this.email, this.phone, this.password]);
   }
 
