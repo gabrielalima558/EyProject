@@ -1,0 +1,18 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "name":"João",
+      "lastName": "Batista",
+      "cpf": "474035339852",
+      "email": "email@gmail.com",
+      "phone": "11957853789",
+      "password": "1234",
+      "ethnicity": "Negra",
+      "nativePeople": "Não",
+      "lgbtqia": "Não",
+      "pcd": "Sim",
+      "familyIncome": "2000"
+    }
+  ]
+}
