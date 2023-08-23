@@ -13,6 +13,8 @@ import { SubmitJobPositionChallengeComponent } from './components/registration/s
 import { SubmitJobPositionSuccessComponent } from './components/registration/submit-job-position-success/submit-job-position-success.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { JobCardComponent } from './components/job-card/job-card.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { JobCardComponent } from './components/job-card/job-card.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
