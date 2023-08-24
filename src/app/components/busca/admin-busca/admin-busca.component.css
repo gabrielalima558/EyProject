@@ -1,0 +1,42 @@
+@media (min-width: 992px) {
+  .navbar,
+  .navbar-collapse {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100vh;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar {
+    width: 10%;
+  }
+
+  .navbar-brand {
+    margin-left: 0.5em;
+    padding-bottom: 0;
+  }
+
+  .nav-link {
+    color: #FFFFFF;
+    margin-bottom: 5%;
+  }
+
+  .buscar {
+    color: #000000 !important;
+    background-color: #FFFF00;
+  }
+
+  .buscar:hover {
+    background-color: #FFD700;
+  }
+
+
+  .navbar-nav.ml-auto.flex-column .nav-link {
+    margin-bottom: 5%;
+  }
+}
