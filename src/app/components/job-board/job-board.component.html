@@ -30,16 +30,6 @@
   <!-- Fim Seção de Filtros -->
 
   <!-- Seção Cards de Vagas -->
-  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-    <app-job-card></app-job-card>
-    <app-job-card></app-job-card>
-    <app-job-card></app-job-card>
-    <app-job-card></app-job-card>
-    <app-job-card></app-job-card>
-    <app-job-card></app-job-card>
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" *ngFor="let job of listJobs">
+    <app-job-card [job]="job"></app-job-card>
   </div>
-
-
-
-
-

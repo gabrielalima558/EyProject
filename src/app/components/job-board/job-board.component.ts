@@ -1,4 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Job } from '../service/job';
+import { JobsService } from '../service/jobs.service';
 
 @Component({
   selector: 'app-job-board',
@@ -8,9 +10,15 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class JobBoardComponent implements OnInit {
 
-  constructor() { }
+  listJobs: Job[] = [];
+
+  constructor(private service: JobsService) { }
 
   ngOnInit(): void {
+
+    this.service.listar().subscribe((listJobs) => {
+      this.listJobs = listJobs
+    })
   }
 
 }
