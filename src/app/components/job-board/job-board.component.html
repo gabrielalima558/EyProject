@@ -6,9 +6,12 @@
         Selecionar grupo(s) minoritários(s)
       </button>
       <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-        <button ngbDropdownItem>Action - 1</button>
-        <button ngbDropdownItem>Another Action</button>
-        <button ngbDropdownItem>Something else is here</button>
+        <button ngbDropdownItem (click)="onSelectDropdownItem('LGBTQIA+')">LGBTQIA+</button>
+        <button ngbDropdownItem (click)="onSelectDropdownItem('Indígena')">Indígena</button>
+        <button ngbDropdownItem (click)="onSelectDropdownItem('40 anos(+)')">40 anos(+)</button>
+        <button ngbDropdownItem (click)="onSelectDropdownItem('Negro')">Negro</button>
+        <button ngbDropdownItem (click)="onSelectDropdownItem('Pardo')">Pardo</button>
+        <button ngbDropdownItem (click)="onSelectDropdownItem('PCD')">PCD</button>
       </div>
     </div>
   </div>
@@ -17,10 +20,8 @@
       <button type="button" class="btn btn-light" id="dropdownBasic1" ngbDropdownToggle>
         Selecionar área de atuação
       </button>
-      <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-        <button ngbDropdownItem>Action - 1</button>
-        <button ngbDropdownItem>Another Action</button>
-        <button ngbDropdownItem>Something else is here</button>
+      <div ngbDropdownMenu aria-labelledby="dropdownBasic1" >
+        <button *ngFor="let job of listJobs" ngbDropdownItem (click)="onSelectDropdownItem(job.name_position)">{{job.name_position}}</button>
       </div>
     </div>
   </div>

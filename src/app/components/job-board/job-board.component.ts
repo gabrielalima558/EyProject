@@ -12,6 +12,8 @@ export class JobBoardComponent implements OnInit {
 
   listJobs: Job[] = [];
 
+  selectedItemDropdown: string = '';
+
   constructor(private service: JobsService) { }
 
   ngOnInit(): void {
@@ -20,5 +22,11 @@ export class JobBoardComponent implements OnInit {
       this.listJobs = listJobs
     })
   }
+
+  onSelectDropdownItem(item: string) {
+    this.selectedItemDropdown = item;
+  }
+
+
 
 }
