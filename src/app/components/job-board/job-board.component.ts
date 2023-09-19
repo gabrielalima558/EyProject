@@ -11,7 +11,7 @@ import { JobsService } from '../service/jobs.service';
 export class JobBoardComponent implements OnInit {
 
   listJobs: Job[] = [];
-
+  filteredListJobs: Job[] = [];
   selectedItemDropdown: string = '';
 
   constructor(private service: JobsService) { }
@@ -27,6 +27,15 @@ export class JobBoardComponent implements OnInit {
     this.selectedItemDropdown = item;
   }
 
-
+  filterItems() {
+    if (this.selectedItemDropdown) {
+      this.filteredListJobs = this.listJobs.filter((item) =>
+        item.name_position.includes(this.selectedItemDropdown)
+      );
+    } else {
+      // Se nada estiver selecionado no dropdown, exibimos todos os itens.
+      this.filteredListJobs = [...this.listJobs];
+    }
+  }
 
 }
