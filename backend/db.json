@@ -56,6 +56,35 @@
       "pcd": "true",
       "familyIncome": 90000,
       "id": 4
+    },
+    {
+      "name": "Gabriela",
+      "cpf": "468.907.518-25",
+      "email": "gabrielalima558@gmail.com",
+      "phone": "11958270826",
+      "password": "",
+      "birth": "2023-09-01",
+      "ethnicity": "parda",
+      "nativePeople": "false",
+      "lgbtqia": "true",
+      "pcd": "false",
+      "familyIncome": 7,
+      "id": 5
     }
-  ]
+  ],
+
+  "jobs": [
+    {
+      "id": 1,
+      "name_position": "Analista de Sistemas",
+      "minority_group_type": ["LGBTQIA+", "Indigena", "40 anos(+)"],
+      "description": "Estamos em busca de um Analista de Sistemas dedicado e orientado para soluções para integrar nossa equipe de TI. O candidato selecionado será responsável por analisar, projetar e coordenar a implementação de sistemas em consonância com os objetivos e necessidades da organização."
+    },
+    {
+      "id": 2,
+      "name_position": "Gestor",
+      "minority_group_type": ["LGBTQIA+", "Indigena", "40 anos(+)", "Baixa Renda", "PCD"],
+      "description": "Estamos em busca de um Analista de Sistemas dedicado e orientado para soluções para integrar nossa equipe de TI. O candidato selecionado será responsável por analisar, projetar e coordenar a implementação de sistemas em consonância com os objetivos e necessidades da organização."
+    }
+]
 }
