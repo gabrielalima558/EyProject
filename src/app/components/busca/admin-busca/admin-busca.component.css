@@ -13,7 +13,8 @@
   }
 
   .navbar {
-    width: 10%;
+    width: 16em;
+    height: 100%;
   }
 
   .navbar-brand {
@@ -23,12 +24,13 @@
 
   .nav-link {
     color: #FFFFFF;
-    margin-bottom: 5%;
+
   }
 
   .buscar {
     color: #000000 !important;
     background-color: #FFFF00;
+
   }
 
   .buscar:hover {
@@ -36,7 +38,5 @@
   }
 
 
-  .navbar-nav.ml-auto.flex-column .nav-link {
-    margin-bottom: 5%;
-  }
+
 }

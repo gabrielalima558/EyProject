@@ -1,24 +1,45 @@
-.page-container {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
+h1{
+color: #FFFFFF;
+font-size: 2em;
+margin-left: 1em;
+width: 6em;
+margin-top: 1em;
 }
 
-.content {
-  flex-grow: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f2f2f2; /* Cor de fundo para o conteúdo */
+p{
+  color: gray;
 }
 
-.flex-container {
-  display: flex;
-  align-items: center;
-  gap: 20px;
+h3{
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+
 }
 
-/* Estilos do componente admin-busca */
-app-admin-busca {
- display: inline;
+button{
+  margin-top: 45em;
+  margin-right: 1em;
+  width: 100px;
+  color: #000000;
+  background-color: #FFFF00;
+  padding: 10px;
 }
+
+.marginLeft{
+  margin-left: 3em;
+}
+
+
+.boardCSS{
+  background-color: #FFFFFF;
+  margin-right: 3em;
+  margin-top: 15em;
+  width: 17em;
+  height: 400px;
+  border-radius: 5px;
+}
+
+
+
+
