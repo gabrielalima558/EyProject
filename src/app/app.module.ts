@@ -8,6 +8,8 @@ import { PersonalInformationComponent } from './components/registration/personal
 import { LoginComponent } from './components/login/login.component';
 import { AdminBuscaComponent } from './components/busca/admin-busca/admin-busca.component';
 import { HomeAdminComponent } from './components/admin/home-admin/home-admin.component';
+import { CadastroVagaComponent } from './components/admin/cadastro-vaga/cadastro-vaga.component';
+import { VagasCadastradasComponent } from './components/admin/vagas-cadastradas/vagas-cadastradas.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { HomeAdminComponent } from './components/admin/home-admin/home-admin.com
     PersonalInformationComponent,
     LoginComponent,
     AdminBuscaComponent,
-    HomeAdminComponent
+    HomeAdminComponent,
+    CadastroVagaComponent,
+    VagasCadastradasComponent
   ],
   imports: [
     BrowserModule,
