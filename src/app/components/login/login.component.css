@@ -1,12 +1,29 @@
+
+.display-flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .main-form {
-  padding-bottom: 15%;
+  padding-bottom: 50%;
   padding-left: 15%;
   padding-right: 15%;
-  padding-top: 5%;
+  padding-top: 10%;
+  height: 100%;
+}
+
+.input-style{
+  margin-bottom: 30%;
+}
+
+.main-content{
+  margin-bottom: 20%;
+  margin-top: 20%;
 }
 
 .title {
-  margin-bottom: 112px;
+  margin-bottom: 50px;
 }
 
 .input-custom {
@@ -23,4 +40,8 @@
   background: #FFEA29;
   margin-top: 24px;
   border: 1px solid transparent;
+}
+
+.link-primary {
+  font-size: 14px;
 }

@@ -14,6 +14,6 @@ export class LoginComponent implements OnInit {
   }
 
   startLogin() {
-    this.router.navigate(['/personalInformation'])
+    this.router.navigate(['/register/1'])
   }
 }

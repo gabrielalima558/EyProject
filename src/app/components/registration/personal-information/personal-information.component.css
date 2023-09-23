@@ -1,3 +1,14 @@
+.display-flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-content{
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+
 .input-custom {
   border: 1px solid transparent;
   border-radius: 20px;

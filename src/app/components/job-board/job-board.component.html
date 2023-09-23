@@ -1,0 +1,39 @@
+<p class="fs-1 text-start text-light fw-bold ms-3">VAGAS</p>
+  <!-- Seção de Filtros -->
+  <div class="btn-group ms-3 mt-3">
+    <div ngbDropdown class="d-inline-block">
+      <button type="button" class="btn btn-light" id="dropdownBasic1" ngbDropdownToggle>
+        Selecionar grupo(s) minoritários(s)
+      </button>
+      <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+        <button ngbDropdownItem (click)="onSelectDropdownItem('LGBTQIA+')">LGBTQIA+</button>
+        <button ngbDropdownItem (click)="onSelectDropdownItem('Indígena')">Indígena</button>
+        <button ngbDropdownItem (click)="onSelectDropdownItem('40 anos(+)')">40 anos(+)</button>
+        <button ngbDropdownItem (click)="onSelectDropdownItem('Negro')">Negro</button>
+        <button ngbDropdownItem (click)="onSelectDropdownItem('Pardo')">Pardo</button>
+        <button ngbDropdownItem (click)="onSelectDropdownItem('PCD')">PCD</button>
+        <button ngbDropdownItem (click)="onSelectDropdownItem('Baixa Renda')">Baixa Renda</button>
+      </div>
+    </div>
+  </div>
+  <div class="btn-group ms-3 mt-3">
+    <div ngbDropdown class="d-inline-block">
+      <button type="button" class="btn btn-light" id="dropdownBasic1" ngbDropdownToggle>
+        Selecionar área de atuação
+      </button>
+      <div ngbDropdownMenu aria-labelledby="dropdownBasic1" >
+        <button *ngFor="let job of listJobs" ngbDropdownItem (click)="onSelectDropdownItem(job.name_position)">{{job.name_position}}</button>
+      </div>
+    </div>
+  </div>
+  <div class="btn-group ms-3 mt-3 me-3 position-absolute end-0">
+    <button type="button" class="btn btn-light"><i class="bi bi-funnel-fill"></i></button>
+  </div>
+  <!-- Fim Seção de Filtros -->
+
+  <!-- Seção Cards de Vagas -->
+  <div class="row">
+    <div class="col-md-4" *ngFor="let job of listJobs">
+      <app-job-card [job]="job"></app-job-card>
+    </div>
+  </div>

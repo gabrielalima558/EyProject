@@ -10,6 +10,15 @@ import { AdminBuscaComponent } from './components/busca/admin-busca/admin-busca.
 import { HomeAdminComponent } from './components/admin/home-admin/home-admin.component';
 import { CadastroVagaComponent } from './components/admin/cadastro-vaga/cadastro-vaga.component';
 import { VagasCadastradasComponent } from './components/admin/vagas-cadastradas/vagas-cadastradas.component';
+import { JobBoardComponent } from './components/job-board/job-board.component';
+import { SocialVulnerabilityInformationComponent } from './components/registration/social-vulnerability-information/social-vulnerability-information.component';
+import { SubmitJobPositionComponent } from './components/registration/submit-job-position/submit-job-position.component';
+import { SubmitJobPositionChallengeComponent } from './components/registration/submit-job-position-challenge/submit-job-position-challenge.component';
+import { SubmitJobPositionSuccessComponent } from './components/registration/submit-job-position-success/submit-job-position-success.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { JobCardComponent } from './components/job-card/job-card.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,11 +29,20 @@ import { VagasCadastradasComponent } from './components/admin/vagas-cadastradas/
     AdminBuscaComponent,
     HomeAdminComponent,
     CadastroVagaComponent,
-    VagasCadastradasComponent
+    VagasCadastradasComponent,
+    JobBoardComponent,
+    SocialVulnerabilityInformationComponent,
+    SubmitJobPositionComponent,
+    SubmitJobPositionChallengeComponent,
+    SubmitJobPositionSuccessComponent,
+    JobCardComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

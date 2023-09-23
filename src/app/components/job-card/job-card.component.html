@@ -1,0 +1,16 @@
+<div class="col">
+  <div class="card h-100 p-3 ms-1 mt-4">
+    <div class="card-body">
+      <h5 class="card-title fs-4 mb-2">{{ job.name_position }}</h5>
+      <div class="row">
+        <div class="col-md-3" *ngFor="let type of job.minority_group_type">
+          <span class="badge rounded-pill text-bg-primary me-2">{{ type }}</span>
+        </div>
+      </div>
+      <p class="card-text mt-3">{{job.description}}</p>
+      <div class="text-end">
+        <a href="#" class="btn btn-warning fw-medium">Inscrever-se</a>
+      </div>
+    </div>
+  </div>
+</div>
