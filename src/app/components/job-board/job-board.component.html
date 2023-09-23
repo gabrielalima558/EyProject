@@ -33,7 +33,7 @@
 
   <!-- Seção Cards de Vagas -->
   <div class="row">
-    <div class="col-md-4" *ngFor="let job of listJobs">
+    <div class="col-md-4" *ngFor="let job of filteredJobs">
       <app-job-card [job]="job"></app-job-card>
     </div>
   </div>

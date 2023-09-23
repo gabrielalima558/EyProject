@@ -11,31 +11,29 @@ import { JobsService } from '../service/jobs.service';
 export class JobBoardComponent implements OnInit {
 
   listJobs: Job[] = [];
-  filteredListJobs: Job[] = [];
+  filteredJobs: Job[] = []; // Lista de vagas filtradas
   selectedItemDropdown: string = '';
 
   constructor(private service: JobsService) { }
 
   ngOnInit(): void {
-
     this.service.listar().subscribe((listJobs) => {
-      this.listJobs = listJobs
-    })
+      this.listJobs = listJobs;
+      // Inicialmente, você pode mostrar todas as vagas
+      this.filteredJobs = [...listJobs];
+    });
   }
 
   onSelectDropdownItem(item: string) {
     this.selectedItemDropdown = item;
-  }
 
-  filterItems() {
-    if (this.selectedItemDropdown) {
-      this.filteredListJobs = this.listJobs.filter((item) =>
-        item.name_position.includes(this.selectedItemDropdown)
-      );
+    // Aqui você filtra a lista de vagas com base na opção selecionada
+    if (item === 'Todas') {
+      // Se 'Todas' for selecionada, mostre todas as vagas
+      this.filteredJobs = [...this.listJobs];
     } else {
-      // Se nada estiver selecionado no dropdown, exibimos todos os itens.
-      this.filteredListJobs = [...this.listJobs];
+      // Caso contrário, filtre as vagas com base na opção selecionada
+      this.filteredJobs = this.listJobs.filter((job) => job.name_position === item);
     }
   }
-
 }
