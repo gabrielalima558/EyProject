@@ -10,9 +10,9 @@ export class JobCardComponent implements OnInit {
 
   @Input() job: Job = {
     id:0,
-    name_position: "Analista",
-    minority_group_type: ["Indigena"],
-    description: "blá blá blá blá blá"
+    title: "Analista",
+    description: "blá blá blá blá blá",
+    minorityGroups: ["Indigena"]
   }
 
   constructor() { }

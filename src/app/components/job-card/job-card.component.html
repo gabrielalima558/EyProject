@@ -1,9 +1,9 @@
 <div class="col">
   <div class="card h-100 p-3 ms-1 mt-4">
     <div class="card-body">
-      <h5 class="card-title fs-4 mb-2">{{ job.name_position }}</h5>
+      <h5 class="card-title fs-4 mb-2">{{ job.title }}</h5>
       <div class="row">
-        <div class="col-md-3" *ngFor="let type of job.minority_group_type">
+        <div class="col-md-3" *ngFor="let type of job.minorityGroups">
           <span class="badge rounded-pill text-bg-primary me-2">{{ type }}</span>
         </div>
       </div>

@@ -30,7 +30,7 @@ export class JobBoardComponent implements OnInit {
   filterItems() {
     if (this.selectedItemDropdown) {
       this.filteredListJobs = this.listJobs.filter((item) =>
-        item.name_position.includes(this.selectedItemDropdown)
+        item.title.includes(this.selectedItemDropdown)
       );
     } else {
       // Se nada estiver selecionado no dropdown, exibimos todos os itens.

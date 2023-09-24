@@ -22,7 +22,7 @@
         Selecionar área de atuação
       </button>
       <div ngbDropdownMenu aria-labelledby="dropdownBasic1" >
-        <button *ngFor="let job of listJobs" ngbDropdownItem (click)="onSelectDropdownItem(job.name_position)">{{job.name_position}}</button>
+        <button *ngFor="let job of listJobs" ngbDropdownItem (click)="onSelectDropdownItem(job.title)">{{job.title}}</button>
       </div>
     </div>
   </div>
