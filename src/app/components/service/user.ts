@@ -1,15 +1,13 @@
 export interface User {
   id?: number,
   name: string,
-  lastName: string,
   cpf: string,
   email: string,
-  phone: string,
+  mobileNumber: string,
   password: string,
   birth: string,
   ethnicity: string,
-  nativePeople: string,
-  lgbtqia: string,
-  pcd: string,
+  lgbtqia: boolean | null,
+  disability: string,
   familyIncome: string
 }

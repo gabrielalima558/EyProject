@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class SubmitUserService {
-  private readonly API = 'http://localhost:3000/user'
+  private readonly API = 'http://localhost:8723/usuarios'
 
   constructor(private http: HttpClient) { }
 

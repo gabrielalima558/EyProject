@@ -32,7 +32,7 @@ const routes: Routes = [
     component: JobBoardComponent
   },
   {
-    path: 'register/2/:name/:lastname/:cpf/:email/:phone/:password',
+    path: 'register/2/:name/:cpf/:email/:mobileNumber/:password',
     component: SocialVulnerabilityInformationComponent
   },
   {
