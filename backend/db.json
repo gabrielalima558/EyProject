@@ -66,21 +66,44 @@
       "pcd": "false",
       "familyIncome": 7,
       "id": 5
+    },
+    {
+      "name": "",
+      "cpf": "",
+      "email": "",
+      "phone": "",
+      "password": "",
+      "birth": "",
+      "ethnicity": "",
+      "nativePeople": "",
+      "lgbtqia": "",
+      "pcd": "",
+      "familyIncome": "",
+      "id": 6
     }
   ],
-
   "jobs": [
     {
       "id": 1,
       "name_position": "Analista de Sistemas",
-      "minority_group_type": ["LGBTQIA+", "Indigena", "40 anos(+)"],
+      "minority_group_type": [
+        "LGBTQIA+",
+        "Indigena",
+        "40 anos(+)"
+      ],
       "description": "Estamos em busca de um Analista de Sistemas dedicado e orientado para soluções para integrar nossa equipe de TI. O candidato selecionado será responsável por analisar, projetar e coordenar a implementação de sistemas em consonância com os objetivos e necessidades da organização."
     },
     {
       "id": 2,
       "name_position": "Gestor",
-      "minority_group_type": ["LGBTQIA+", "Indigena", "40 anos(+)", "Baixa Renda", "PCD"],
+      "minority_group_type": [
+        "LGBTQIA+",
+        "Indigena",
+        "40 anos(+)",
+        "Baixa Renda",
+        "PCD"
+      ],
       "description": "Estamos em busca de um Analista de Sistemas dedicado e orientado para soluções para integrar nossa equipe de TI. O candidato selecionado será responsável por analisar, projetar e coordenar a implementação de sistemas em consonância com os objetivos e necessidades da organização."
     }
-]
+  ]
 }

@@ -6,6 +6,10 @@ import { AppComponent } from './app.component';
 import { EyHeaderComponent } from './components/ey-header/ey-header.component';
 import { PersonalInformationComponent } from './components/registration/personal-information/personal-information.component';
 import { LoginComponent } from './components/login/login.component';
+import { AdminBuscaComponent } from './components/busca/admin-busca/admin-busca.component';
+import { HomeAdminComponent } from './components/admin/home-admin/home-admin.component';
+import { CadastroVagaComponent } from './components/admin/cadastro-vaga/cadastro-vaga.component';
+import { VagasCadastradasComponent } from './components/admin/vagas-cadastradas/vagas-cadastradas.component';
 import { JobBoardComponent } from './components/job-board/job-board.component';
 import { SocialVulnerabilityInformationComponent } from './components/registration/social-vulnerability-information/social-vulnerability-information.component';
 import { SubmitJobPositionComponent } from './components/registration/submit-job-position/submit-job-position.component';
@@ -22,6 +26,10 @@ import { HttpClientModule } from '@angular/common/http';
     EyHeaderComponent,
     PersonalInformationComponent,
     LoginComponent,
+    AdminBuscaComponent,
+    HomeAdminComponent,
+    CadastroVagaComponent,
+    VagasCadastradasComponent,
     JobBoardComponent,
     SocialVulnerabilityInformationComponent,
     SubmitJobPositionComponent,

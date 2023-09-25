@@ -1,0 +1,42 @@
+@media (min-width: 992px) {
+  .navbar,
+  .navbar-collapse {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100vh;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar {
+    width: 16em;
+    height: 100%;
+  }
+
+  .navbar-brand {
+    margin-left: 0.5em;
+    padding-bottom: 0;
+  }
+
+  .nav-link {
+    color: #FFFFFF;
+
+  }
+
+  .buscar {
+    color: #000000 !important;
+    background-color: #FFFF00;
+
+  }
+
+  .buscar:hover {
+    background-color: #FFD700;
+  }
+
+
+
+}
