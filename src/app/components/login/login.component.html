@@ -1,14 +1,14 @@
 <div class="d-flex p-2 flex-column justify-content-center align-items-center">
-  <form class="main-form ff-inter d-flex p-2 flex-column justify-content-center align-items-center">
+  <form class="main-form ff-inter d-flex p-2 flex-column justify-content-center align-items-center" (ngSubmit)="doLogin()">
     <div class="main-content">
       <p class="text-center title">Login</p>
       <div class="mb-3">
-        <label for="emailCadidate" class="form-label">E-mail</label>
-        <input type="email" class="form-control input-custom" id="emailCadidate" aria-describedby="emailCadidate">
+        <label for="emailCadidate" class="form-label">Usuario</label>
+        <input type="email" class="form-control input-custom" id="emailCadidate" aria-describedby="emailCadidate" name="username" [(ngModel)]="login.username">
       </div>
       <div class="mb-3 input-style">
         <label for="passwordCadidate" class="form-label">Senha</label>
-        <input type="text" class="form-control input-custom" id="passwordCadidate">
+        <input type="password" class="form-control input-custom" id="passwordCadidate" name="password" [(ngModel)]="login.password">
       </div>
       <div class="text-center">
         <a href="#" class="link-primary">Esqueceu a senha?</a>
@@ -17,7 +17,7 @@
         <a routerLink="/register/1" class="link-primary">Cadastre-se</a>
       </div>
       <div class="text-center">
-        <button (click)="startLogin()" type="submit" class="btn next-button">Entrar</button>
+        <button type="submit" class="btn next-button">Entrar</button>
       </div>
     </div>
   </form>

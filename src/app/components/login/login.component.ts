@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
+import { AuthService } from './service/auth.service';
+import { Login } from './service/login';
+import jwt_decode from 'jwt-decode';
+
 
 @Component({
   selector: 'app-login',
@@ -8,12 +12,33 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  login: Login = {
+    username: "",
+    password: ""
+  }
+
+  constructor(private router: Router, private route: ActivatedRoute, private service: AuthService) { }
 
   ngOnInit(): void {
   }
+  getDecodedAccessToken(token: string): any {
+    try {
+      return jwt_decode(token);
+    } catch(Error) {
+      return null;
+    }
+  }
+  doLogin() {
+    this.service.login(this.login)
+      .subscribe(() => {
+        const tokenInfo = this.getDecodedAccessToken(localStorage.getItem('token')!);
+        if(tokenInfo.role == 'ADMIN') {
 
-  startLogin() {
-    this.router.navigate(['/register/1'])
+        } else {
+          this.router.navigate(['job-board']);
+        }
+      });
   }
 }
+
+

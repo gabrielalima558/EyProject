@@ -9,8 +9,6 @@ import { Observable } from 'rxjs/internal/Observable';
 export class JobsService {
   private readonly API = 'http://localhost:8723/vagas'
 
-
-
   constructor(private http: HttpClient) { }
 
   listar(): Observable<Job[]> {
