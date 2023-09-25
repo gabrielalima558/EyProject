@@ -33,7 +33,7 @@ export class LoginComponent implements OnInit {
       .subscribe(() => {
         const tokenInfo = this.getDecodedAccessToken(localStorage.getItem('token')!);
         if(tokenInfo.role == 'ADMIN') {
-
+          this.router.navigate(['adminHome']);
         } else {
           this.router.navigate(['job-board']);
         }
