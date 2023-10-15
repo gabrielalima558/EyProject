@@ -19,6 +19,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { JobCardComponent } from './components/job-card/job-card.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ProcessoSeletivoComponent } from './components/admin/processo-seletivo/processo-seletivo.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { HttpClientModule } from '@angular/common/http';
     SubmitJobPositionChallengeComponent,
     SubmitJobPositionSuccessComponent,
     JobCardComponent,
+    ProcessoSeletivoComponent,
   ],
   imports: [
     BrowserModule,

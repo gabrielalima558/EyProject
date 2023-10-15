@@ -1,3 +1,4 @@
+import { ProcessoSeletivoComponent } from './components/admin/processo-seletivo/processo-seletivo.component';
 import { SubmitJobPositionSuccessComponent } from './components/registration/submit-job-position-success/submit-job-position-success.component';
 import { SubmitJobPositionChallengeComponent } from './components/registration/submit-job-position-challenge/submit-job-position-challenge.component';
 import { NgModule, Component } from '@angular/core';
@@ -42,6 +43,14 @@ const routes: Routes = [
   {
     path:'vagasCadastradas',
     component: VagasCadastradasComponent
+  },
+  {
+    path:'processoSeletivo/:name_position/:minority_group_type/:description',
+    component: ProcessoSeletivoComponent
+  },
+  {
+    path:'processoSeletivo',
+    component: ProcessoSeletivoComponent
   },
   {
     path: 'register/2',

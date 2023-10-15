@@ -1,0 +1,65 @@
+h1{
+  color: #FFFFFF;
+  font-size: 2em;
+  margin-left: 1em;
+  width: 100%;
+
+  }
+
+  p{
+    color: #FFFFFF;
+    margin-left: 2.5em;
+    font-size: 3vh;
+    margin-bottom: 6vh;
+  }
+
+  .display-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+  .input-custom {
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background: #D9D9D9;
+  }
+
+  .next-button {
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 80px;
+    background: #FFEA29;
+    margin-top: 24px;
+    border: 1px solid transparent;
+  }
+
+  .text-file {
+    margin-left: 2%;
+    font-size: 12px;
+
+  }
+
+
+  .text-file::placeholder{
+    color: black;
+  }
+
+  .text-top{
+    color: black;
+  }
+
+form{
+  margin-left: 50vh;
+  height: 60vh;
+}
+
+textarea{
+  height: 100px!important;
+  width: 300px!important;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
